@@ -18,17 +18,19 @@ class Program
 
         string userCommand = Console.ReadLine();
 
-        if (userCommand.ToLower() == "a")
+        switch (userCommand.ToLower())
         {
-            PrintExpression(firstNumber, secondNumber, "+", firstNumber + secondNumber);
-        }
-        else if (userCommand.ToLower() == "s")
-        {
-            PrintExpression(firstNumber, secondNumber, "-", firstNumber - secondNumber);
-        }
-        else if (userCommand.ToLower() == "m")
-        {
-            PrintExpression(firstNumber, secondNumber, "*", firstNumber * secondNumber);
+            case "a":
+                PrintExpression(firstNumber, secondNumber, "+", firstNumber + secondNumber);
+                break;
+            
+            case "s":
+                PrintExpression(firstNumber, secondNumber, "-", firstNumber - secondNumber);
+                break;
+            
+            case "m":
+                PrintExpression(firstNumber, secondNumber, "*", firstNumber * secondNumber);
+                break;
         }
     }
 
