@@ -10,5 +10,10 @@ class Program
         int firstNumber = int.Parse(Console.ReadLine());
         Console.Write("Input the second number: ");
         int secondNumber = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("What do you want to do?");
+        Console.WriteLine("[A]dd");
+        Console.WriteLine("[S]ubstract");
+        Console.WriteLine("[M]ultiply");
     }
 }
