@@ -21,20 +21,20 @@ class Program
         switch (userCommand.ToLower())
         {
             case "a":
-                PrintExpression(firstNumber, secondNumber, "+", firstNumber + secondNumber);
+                PrintExpression(firstNumber, secondNumber, '+', firstNumber + secondNumber);
                 break;
             
             case "s":
-                PrintExpression(firstNumber, secondNumber, "-", firstNumber - secondNumber);
+                PrintExpression(firstNumber, secondNumber, '-', firstNumber - secondNumber);
                 break;
             
             case "m":
-                PrintExpression(firstNumber, secondNumber, "*", firstNumber * secondNumber);
+                PrintExpression(firstNumber, secondNumber, '*', firstNumber * secondNumber);
                 break;
         }
     }
 
-    static void PrintExpression(int firstNumber, int secondNumber, string operation, int result)
+    static void PrintExpression(int firstNumber, int secondNumber, char operation, int result)
     {
         Console.WriteLine($"{firstNumber} {operation} {secondNumber} = {result}");
     }
