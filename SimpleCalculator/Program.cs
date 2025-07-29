@@ -31,6 +31,10 @@ class Program
             case "m":
                 PrintExpression(firstNumber, secondNumber, '*', firstNumber * secondNumber);
                 break;
+            
+            default:
+                Console.WriteLine("Wrong command");
+                break;
         }
     }
 
